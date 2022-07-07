@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/lblAddMed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Datos de la medicina:"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/tipoAddMed"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:background="@drawable/estilo_edit_text"
+        android:ems="10"
+        android:hint="  Tipo de medicina"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nombreAddMed" />
+
+    <EditText
+        android:id="@+id/nombreAddMed"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:background="@drawable/estilo_edit_text"
+        android:ems="10"
+        android:hint="  Nombre de la medicina"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblAddMed" />
+
+    <TextView
+        android:id="@+id/lblAddMedHora"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hora de consumo:"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tipoAddMed" />
+
+    <TextView
+        android:id="@+id/lblAddMedTimeSelected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hora Seleccionada: 00:00"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSeleccionarHora" />
+
+    <Button
+        android:id="@+id/btnSeleccionarHora"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Seleccionar hora"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblAddMedHora" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense.ExposedDropdownMenu"
+        android:layout_width="360dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblAddMedTimeSelected">
+
+        <AutoCompleteTextView
+            android:id="@+id/tipoRepeticion"
+            android:layout_width="match_parent"
+            android:layout_height="61dp"
+            android:layout_weight="1"
+            android:backgroundTint="#5AD2C6"
+            android:hint="Tomar cada..."
+            android:inputType="none"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <EditText
+        android:id="@+id/dosis"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:background="@drawable/estilo_edit_text"
+        android:ems="10"
+        android:layout_marginTop="5dp"
+        android:hint="  Número de dosis"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout" />
+
+
+    <Button
+        android:id="@+id/btnCancelarMed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:backgroundTint="#D55454"
+        android:text="Cancelar"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.188"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dosis" />
+
+    <Button
+        android:id="@+id/btnGuardarMed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:backgroundTint="#5AD2C6"
+        android:text="Guardar"
+        android:textColor="@color/white"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.741"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dosis" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">eSalud</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="title_activity_login">eSalud</string>
+    <string-array name="tiposSanguineos">
+        <item>A+</item>
+        <item>B+</item>
+        <item>AB+</item>
+        <item>O+</item>
+        <item>A-</item>
+        <item>B-</item>
+        <item>AB-</item>
+        <item>O-</item>
+    </string-array>
+    <string-array name="padecimientosCronicos">
+        <item>Artritis</item>
+        <item>Asma</item>
+        <item>Cáncer</item>
+        <item>Diabetes</item>
+        <item>Enfermedades del Corazón</item>
+        <item>Epilepsia</item>
+        <item>EPOC</item>
+        <item>VIH/sida-</item>
+    </string-array>
+    <string-array name="signosVitales">
+        <item>Presión Arterial</item>
+        <item>Niveles de Azúcar</item>
+        <item>Niveles de Oxígeno</item>
+        <item>Ritmo Cardiaco</item>
+        <item>Temperatura</item>
+    </string-array>
+    <string-array name="repeticionArray">
+        <item>1 dosis por día</item>
+        <item>1 dosis cada 12 horas</item>
+        <item>1 dosis cada 8 horas</item>
+        <item>1 a la hora marcada</item>
+    </string-array>
+</resources>

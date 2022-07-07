@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/perfilUsuario"
+        android:title="Perfil de Paciente"
+        />
+    <item
+        android:id="@+id/medicinas"
+        android:title="Medicinas"
+        />
+    <item
+        android:id="@+id/signosVitales"
+        android:title="Monitoreo"
+        />
+    <item
+        android:id="@+id/resumen"
+        android:title="Resumen Clínico"
+        />
+    <item
+        android:id="@+id/salirSesion"
+        android:title="Cerrar Sesión"
+        />
+</menu>
